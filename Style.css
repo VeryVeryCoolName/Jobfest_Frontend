@@ -1,0 +1,240 @@
+
+
+.bgimg {
+  background-color:#9abef2;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-image:url("/Asstest/Poster.jpeg");
+  min-height:100%;
+}
+
+.w3-button.nav-button {
+  background-color:rgba(128,128,128,0.55);
+  color:white;
+  transition:background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.w3-button.nav-button:hover {
+  background-color:rgba(128,128,128,0.75);
+  color:white;
+  transform:translateY(-2px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.w3-button.nav-button:active {
+  transform:scale(0.96);
+  box-shadow:none;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+.nav-surface {
+  background-color:#6386b8;
+}
+
+.page-content {
+  background-color:#6386b8;
+  color:white;
+}
+
+.site-tag {
+  display:inline-block;
+  padding:2px 8px;
+  background-color:rgba(30,55,85,0.65);
+  color:white;
+}
+
+.header-credit {
+  color:white;
+}
+
+.info-panel {
+  background-color:#dce7f7;
+  color:#222;
+}
+
+.footer-surface {
+  background-color:#6386b8;
+  color:white;
+}
+
+.tablink {
+  color:white;
+  cursor:pointer;
+  padding:8px 16px;
+}
+
+.tablink:hover,
+.tablink.active-tab {
+  background-color:#45668f;
+  color:white;
+}
+
+
+
+
+.member-photo {
+  min-height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#dce7f7;
+  color:#40536d;
+  text-align:center;
+}
+
+
+
+
+
+
+.member-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.member-card {
+  padding:16px;
+  background-color:rgb(123, 173, 238);
+  color:#222;
+}
+
+
+<!------ Modificari Js-->
+
+
+#app {
+  max-width:700px;
+  margin:32px auto;
+}
+
+#app .member-card {
+  background-color:#6386b8;
+  color:rgb(255, 255, 255);
+}
+
+#app .registration-card {
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(20,50,90,0.16);
+  transition:box-shadow 180ms ease, transform 180ms ease;
+}
+
+#app .registration-card:hover {
+  box-shadow:0 10px 26px rgba(20,50,90,0.22);
+  transform:translateY(-2px);
+}
+
+#app .registration-form > p {
+  margin:18px 0;
+}
+
+#app .registration-form > p > label {
+  display:block;
+  font-weight:600;
+}
+
+#app input[type="text"],
+#app input[type="email"] {
+  box-sizing:border-box;
+  width:100%;
+  padding:12px;
+  border:1px solid #1e4b86;
+  border-radius:6px;
+  transition:border-color 160ms ease, box-shadow 160ms ease;
+}
+
+#app input[type="text"]:focus,
+#app input[type="email"]:focus {
+  border-color:#3978c5;
+  box-shadow:0 0 0 3px rgba(57,120,197,0.2);
+  outline:none;
+}
+
+#app input[type="checkbox"],
+#app input[type="radio"] {
+  accent-color:#3978c5;
+}
+
+#app fieldset {
+  margin:16px 0;
+  padding:14px;
+  border:1px solid #739cd6;
+  border-radius:8px;
+  transition:border-color 160ms ease, background-color 160ms ease;
+}
+
+#app fieldset:focus-within {
+  border-color:#3978c5;
+  background-color:#5c75a1;
+}
+
+#app .registration-option {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:7px 10px;
+  border-radius:6px;
+  cursor:pointer;
+  transition:background-color 140ms ease, color 140ms ease;
+}
+
+#app .registration-option:hover {
+  background-color:#a3bfe4;
+}
+
+#app .registration-option.is-selected {
+  background-color:#90b3e4;
+  color:#174b85;
+}
+
+#app button {
+  padding:10px 16px;
+  border:0;
+  border-radius:6px;
+  background-color:#3978c5;
+  color:rgb(255, 255, 255);
+  font:inherit;
+  font-weight:600;
+  cursor:pointer;
+  transition:background-color 160ms ease, transform 160ms ease;
+}
+
+#app button:hover {
+  background-color:#245a99;
+  transform:translateY(-1px);
+}
+
+#app button:focus-visible {
+  outline:3px solid rgba(57,120,197,0.35);
+  outline-offset:3px;
+}
+
+#app .registration-result:not([hidden]) {
+  margin-top:20px;
+  padding:14px;
+  border-left:4px solid #3978c5;
+  border-radius:4px;
+  background-color:#6e9bd4;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior:auto;
+  }
+
+  .w3-button.nav-button,
+  #app .registration-card,
+  #app input,
+  #app fieldset,
+  #app .registration-option,
+  #app button {
+    transition:none;
+  }
+}
