@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 
-<html>
-<title>Duzina</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
-<link rel="stylesheet" href="Style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-
-<!------------->
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Înscriere Job Fest</title>
-
-<!------------->
-
-<style>
-body,html {
-  height:100%;
-  font-family:"Inconsolata",sans-serif;
-}
-
-</style>
-
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Job Fest, 4–6 martie 2027, Casa de Cultură a Studenților. Descoperă programul și înscrie-te la eveniment.">
+  <title>Duzina</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <script src="config.js" defer></script>
+  <script src="api.js" defer></script>
+  <script src="formulare.js" defer></script>
+  <script src="inscriere.js" defer></script>
+  <script src="navigatie.js" defer></script>
+</head>
 <body>
-
-<!-- Butoane de navigatie -->
+<a class="skip-link" href="#festival">Sari la conținut</a>
 
 <div class="w3-top">
   <nav class="w3-flex w3-padding w3-card nav-surface">
@@ -36,19 +27,19 @@ style="flex:1">
 HOME
 </a>
 
-<a href="#Festival"
+<a href="#festival"
 class="w3-button w3-border nav-button"
 style="flex:1">
 JOB FEST
 </a>
 
-<a href="#Membrii si Sponsori"
+<a href="#membri-sponsori"
 class="w3-button w3-border nav-button"
 style="flex:1">
 MEMBRII SI SPONSORI
 </a>
 
-<a href="#Inscriere"
+<a href="#inscriere"
 class="w3-button w3-border nav-button"
 style="flex:1">
 INSCRIERE
@@ -57,17 +48,10 @@ INSCRIERE
   </nav>
 </div>
 
-<!-- Header-ul -->
-
 <header class="bgimg w3-display-container" id="home">
 
-  <div class="w3-display-bottomleft
-  w3-center w3-padding w3-hide-small">
-
-  <!--Posibila descirere pentru asociatie si eveniment (scurta)-->
+  <div class="w3-display-bottomleft w3-center w3-padding w3-hide-small">
     <span class="site-tag"></span>
-  </div>
-    </span>
   </div>
 
   <div class="w3-display-bottomright
@@ -79,13 +63,9 @@ INSCRIERE
 
 </header>
 
-<!-- Page Content -->
+<main class="page-content w3-large" id="continut">
 
-<div class="page-content w3-large">
-
-<!-- Informatii -->
-
-<section class="w3-container" id="Festival">
+<section class="w3-container" id="festival">
 
   <div class="w3-content" style="max-width:700px">
 
@@ -93,72 +73,43 @@ INSCRIERE
   <span class="site-tag w3-wide">Job Fest</span>
 </h5>
 
-
-
 <div class="w3-flex w3-card w3-padding">
-    <a
-       class="tablink w3-center"
-       style="flex:1">
-       Job Fest
-    </a>
+    <a href="#festival" class="tablink w3-center" style="flex:1">Job Fest</a>
 
-    <a href="Pag2.html" target="_blank" title="Program Job Fest"
+    <a href="pag2.html" target="_blank" rel="noopener noreferrer" title="Program Job Fest"
        class="tablink w3-center"
        style="flex:1">
        Program
     </a>
 
-    <a 
-       class="tablink w3-center"
-       style="flex:1">
-       Galerie
-    </a>
-
+    <a href="#galerie" class="tablink w3-center" style="flex:1">Galerie</a>
 
 </div>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<p>JobFest este un proiect pentru studenți, cu scop informativ despre industriile specifice fiecărei facultăți. Timp de trei zile sunt invitați câte patru speakeri care descriu cum se desfășoară viața lor pe partea profesională. Obiectivul proiectului este de a oferii studenților o perspectivă către viitoarea lor carieră.
 </p>
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<p>Totodată evenimentul are și o parte caritabilă. Pe hol, la intrarea în sală, în pauzele dintre speakeri am pregatit standuri de cafea în parteneriat cu: 5 to go, GOAT by Daniel Cafelutza și Ted's Coffee; de asemenea avem și snacksuri, parteneriat cu Luca și Lays. Toți banii obținuți din vânzarea produselor vor fi donați către asociația Salvați Copiii.
 </p>
 
 <div class="w3-panel w3-leftbar info-panel">
 
   <p>
-  <i>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </i>
-  </p>
-
-  <p>
-  Trebuie sa pun informatii despre Festival
+  <i> <b>
+Înscrierea la eveniment se face pe baza completării unui formular, în care există o secțiune pentru depunerea CV-ului către companiile reprezentate de speakeri.
+</b> </i>
   </p>
 
 </div>
 
-<p>
-<b>Ora deschidere:</b> 10:00
-</p>
-<p>
-<b>Addresa:</b> CevaCeva
-
 <br>
 <br>
 <br>
-
-</p>
 
   </div>
 
 </section>
 
-
-
-<!-- Membrii asociatiei si contact -->
-
-<section class="w3-container" id="Membrii si Sponsori">
+<section class="w3-container" id="membri-sponsori">
 
   <div class="w3-content w3-auto">
 
@@ -166,301 +117,225 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
   <span class="site-tag w3-wide">MEMBRII ASOCIATIEI</span>
 </h5>
 
-
-<div class="w3-flex w3-card w3-padding">
-
-  <a href="javascript:void(0)"
-  onclick="openMenu(event,'Membri')"
-  id="myLink"
-  class="tablink w3-center"
-  style="flex:1">
-  Membrii
-  </a>
-
-      <a href="javascript:void(0)"
-  onclick="openMenu(event,'Sponsori')"
-  class="tablink w3-center"
-  style="flex:1">
-  Sponsori
-  </a>
-
-  <a href="javascript:void(0)"
-  onclick="openMenu(event,'Contact')"
-  class="tablink w3-center"
-  style="flex:1">
-  Contact
-  </a>
-
-
+<div class="w3-flex w3-card w3-padding" role="tablist" aria-label="Despre asociație">
+  <button type="button" id="tab-membri" role="tab" aria-controls="membri" aria-selected="true" class="tablink active-tab">Membrii</button>
+  <button type="button" id="tab-sponsori" role="tab" aria-controls="sponsori" aria-selected="false" tabindex="-1" class="tablink">Sponsori</button>
+  <button type="button" id="tab-contact" role="tab" aria-controls="contact" aria-selected="false" tabindex="-1" class="tablink">Contact</button>
 </div>
 
-<!-- Trebuie pus fiecare membru separat in fiecare linie de cod -->
-
-<div id="Membri"
+<div id="membri" role="tabpanel" aria-labelledby="tab-membri" tabindex="0"
 class="w3-container menu w3-padding-48 w3-card">
 
   <div class="member-grid">
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Tomescu Radu</h5>
+      <p><b>Rol:</b> Contactare Alumni SiSC si planificare intalnire</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Ionescu David</h5>
+      <p><b>Rol:</b> Organizre intrebari pentu Alumni</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Citia Robert</h5>
+      <p><b>Rol:</b> Research despre ANOSR si organizatii colaboratoare</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Vedere Alexa</h5>
+      <p><b>Rol:</b> Descrierea si detalierea proiectului</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Delia Lipșa</h5>
+      <p><b>Rol:</b> Research despre ANOSR si organizatii colaboratoare</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Circiumarescu Stefan-Theodor</h5>
+      <p><b>Rol:</b> Creearea formularelor, site online, continut postare informativa</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Ionut Fanatan</h5>
+      <p><b>Rol:</b> Graficul Gantt si calendarul festivalului</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Nastasa Raluca</h5>
+      <p><b>Rol:</b> Flyer eveniment, promovare online</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Deleanu Raisa</h5>
+      <p><b>Rol:</b> Promovare in randul studentilor, afis, sticker</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Ciurtin David</h5>
+      <p><b>Rol:</b> Pachete de beneficii, research surse de finanțare</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Petcu Victoria</h5>
+      <p><b>Rol:</b> Pachete de beneficii ,research surse de finanatare</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Rohat Beatrice</h5>
+      <p><b>Rol:</b> Promovare online</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Dicu Andrei</h5>
+      <p><b>Rol:</b> Site-ul Asociatiei, Front-End</p>
     </article>
 
     <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
+      <h5>Chiran Alexandru</h5>
+      <p><b>Rol:</b> Site-ul Asociatiei, Back-End</p>
     </article>
 
-    <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
-    </article>
-
-    <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
-    </article>
-
-    <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
-    </article>
-
-    <article class="member-card">
-      <div class="member-photo">Adaugă fotografia</div>
-      <h5>Numele membrului</h5>
-      <p><b>Rol:</b> Rolul în asociație</p>
-      <p>Adaugă câteva detalii despre acest membru.</p>
-    </article>
   </div>
 
 </div>
 
-
-<div id="Sponsori"
+<div id="sponsori" role="tabpanel" aria-labelledby="tab-sponsori" tabindex="0"
 class="w3-container menu w3-padding-48 w3-card">
   <h5>Sponsori</h5>
-  <p>De Completat la final</p>
-  <p><b>Numele sponsorului:</b> Descrierea sponsorului</p>
-  <p><b>Numele sponsorului:</b> Descrierea sponsorului</p>
-  <p><b>Numele sponsorului:</b> Descrierea sponsorului</p>
-
+  <table class="sponsor-table">
+    <thead>
+      <tr><th scope="col">Sponsor</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>PrintMag</td></tr>
+      <tr><td>Agrafa Print</td></tr>
+      <tr><td>Web2Print</td></tr>
+      <tr><td>Print Confort</td></tr>
+      <tr><td>LogoPrint</td></tr>
+      <tr><td>Imageprint</td></tr>
+      <tr><td>TMPS – Materiale Promoționale</td></tr>
+      <tr><td>Pehart Group  Pufina</td></tr>
+      <tr><td>Rom Paper Mototol</td></tr>
+      <tr><td>Essity  Tork / Zewa</td></tr>
+      <tr><td>Sofidel – Regina</td></tr>
+      <tr><td>Don Pedro</td></tr>
+      <tr><td>Piramida Trade Invest</td></tr>
+      <tr><td>Mertecom – Meco</td></tr>
+      <tr><td>AQUA Carpatica</td></tr>
+      <tr><td>Borsec – Romaqua Group</td></tr>
+      <tr><td>Dorna – Coca-Cola HBC</td></tr>
+      <tr><td>Bucovina – Maspex</td></tr>
+      <tr><td>Perla Harghitei</td></tr>
+      <tr><td>Zizin</td></tr>
+      <tr><td>Izvorul Minunilor</td></tr>
+      <tr><td>Kandia Dulce</td></tr>
+      <tr><td>Mondelēz International</td></tr>
+      <tr><td>Ferrero</td></tr>
+      <tr><td>ETi</td></tr>
+      <tr><td>Alka</td></tr>
+      <tr><td>Croco</td></tr>
+      <tr><td>Intersnack – Chio/Nutline</td></tr>
+      <tr><td>MABÓ Coffee Roasters</td></tr>
+      <tr><td>Origo</td></tr>
+      <tr><td>20grams Coffee Roasters</td></tr>
+      <tr><td>Saint Roastery</td></tr>
+      <tr><td>NOMONYM Coffee Roastery</td></tr>
+      <tr><td>ROST CAFE</td></tr>
+      <tr><td>Coftale</td></tr>
+      <tr><td>Kaufland</td></tr>
+      <tr><td>Lidl</td></tr>
+      <tr><td>Carrefour</td></tr>
+      <tr><td>Auchan</td></tr>
+      <tr><td>Mega Image</td></tr>
+      <tr><td>PENNY</td></tr>
+      <tr><td>Profi</td></tr>
+      <tr><td>eJobs</td></tr>
+      <tr><td>BestJobs</td></tr>
+      <tr><td>Hipo.ro</td></tr>
+      <tr><td>Academia de Studii Economice din București (ASE)</td></tr>
+      <tr><td>Primăria Municipiului București (PMB)</td></tr>
+      <tr><td>Agenția Națională pentru Ocuparea Forței de Muncă</td></tr>
+      <tr><td>Casa de Cultură a Studenților din București</td></tr>
+    </tbody>
+  </table>
 
 </div>
 
-
-<div id="Contact"
+<div id="contact" role="tabpanel" aria-labelledby="tab-contact" tabindex="0"
 class="w3-container menu w3-padding-48 w3-card">
   <h5>Ia legătura cu noi</h5>
-  <p>De Completat la final</p>
-  <p><b>E-mail:</b> adresa de e-mail a asociației</p>
-  <p><b>Telefon:</b> numărul de telefon al asociației</p>
-  <p><b>Adresă:</b> adresa asociației</p>
-
+  <p><b>E-mail:</b> <a href="mailto:Duzinadeidei@gmail.com">Duzinadeidei@gmail.com</a></p>
+  <p><b>Telefon:</b> <a href="tel:+40775346425">0775346425</a></p>
 
 </div>
 
-<img src="/Asstest/Poster.jpeg"
+<a href="asstest/afis.jpg" target="_blank" rel="noopener noreferrer">
+<img id="galerie" src="asstest/afis.jpg"
 alt="Posterul asociației"
-style="display:block; margin-left:auto; margin-right:auto; width:40%; ">
-
+style="display:block; margin-left:auto; margin-right:auto; width:40%;">
+</a>
 
   </div>
 
 </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
-<!-- Contact -->
-
-<section class="w3-container" id="Inscriere"
+<section class="w3-container" id="inscriere"
 style="padding-bottom:32px">
 
-  <div class="w3-content" style="max-width:700px">
+  <div class="location-content">
 <h5 class="w3-center w3-padding-48">
   <span class="site-tag w3-wide">
   INSCRIERE
   </span>
 </h5>
 
+    <section class="location-layout">
+  <div class="location-details">
+    <h1>Locatia Evenimentului</h1>
+    <p> Te asteptam de la ora 10 cu voie buna, intrebari, si pofta de cafea!</p>
+  </div>
+  <iframe title="Locația Job Fest — Casa de Cultură a Studenților" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.805442092498!2d26.07728677430614!3d44.437152995247025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff5e662c9117%3A0xea26a6a1aeb24906!2sStudents%20Cultural%20House!5e0!3m2!1sen!2sro!4v1793806430081!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
-<!----Adauga harta--->
-<p>
-<b>Te asteptam in locatia:</b>
+    </section>
 <br>
-<br>
-
-<img src="inca-nu-am-locatia"
-alt="Map"
-style="width:100%">
-<br>
-
-
-
-</form>
 
   </div>
 
-</section>
-
-</div>
-
-<!------------->
-
 <div id="app"></div>
-<script src="inscriere.js"></script>
+<noscript><p>Activează JavaScript pentru a completa formularul de înscriere.</p></noscript>
+</section>
+</main>
 
-<!------------------>
+<footer class="footer-surface w3-padding-16 w3-large">
 
+    <p class="instagram-link">
+     <a href="https://www.instagram.com/oduzinadeidei?srtk=ZDNzMDhkaWhtNHl1" target="_blank" rel="noopener noreferrer">
+      <img src="asstest/instagram.png" alt="Instagram">
+      <span>Pagina de Instagram</span>
+     </a>
+    </p>
 
+    <p class="instagram-link">
+     <a href="https://www.facebook.com/share/1DFK8beR1q/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+      <img src="asstest/facebook.png" alt="Facebook">
+      <span>Pagina de Facebook</span>
+     </a>
+    </p>
 
-<!-- Footer -->
-
-<footer class="w3-center footer-surface w3-padding-48 w3-large">
-
-    <p>
-        Paragraf de footer in care se pot pune mai multe informatii despre asociatie, eveniment sau alte lucruri care se doresc sa fie afisate in footer.
+    <p class="footer-feedback">
+     <a href="pag3.html" target="_blank" rel="noopener noreferrer" title="Feedback">Feedback</a>
     </p>
 
 </footer>
-
-<script>
-function openMenu(evt,menuName) {
-  var i,x,tablinks;
-
-  x = document.getElementsByClassName("menu");
-
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablink");
-
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active-tab");
-  }
-
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.classList.add("active-tab");
-}
-
-document.getElementById("myLink").click();
-</script>
-
-<script>
-function openMenu(evt,menuName) {
-  var i,x,tablinks;
-
-  x = document.getElementsByClassName("menu");
-
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablink");
-
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active-tab");
-  }
-
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.classList.add("active-tab");
-}
-
-document.getElementById("myLink").click();
-</script>
 
 </body>
 </html>

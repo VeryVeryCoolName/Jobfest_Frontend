@@ -1,0 +1,11 @@
+{
+  "name": "jobfest-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.0"
+  }
+}
