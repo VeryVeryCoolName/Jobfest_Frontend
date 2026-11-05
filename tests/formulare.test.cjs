@@ -338,6 +338,24 @@ test("eroarea serverului păstrează și CV-ul selectat", async () => {
   app.dom.window.close();
 });
 
+test("timeoutul configurat anulează o singură cerere și păstrează datele formularului", async () => {
+  const app = setup("index.html", { requestTimeoutMs: 5 });
+  app.advance();
+  let requests = 0;
+  app.window.fetch = (_url, options) => {
+    requests++;
+    return new Promise((_resolve, reject) => options.signal.addEventListener("abort", () => reject(new app.window.DOMException("Timeout", "AbortError")), { once: true }));
+  };
+  app.submit();
+  await new Promise(resolve => setTimeout(resolve, 20));
+  assert.equal(requests, 1);
+  assert.equal(app.field("nume").value, "  Popescu  ");
+  assert.equal(app.field("cv").files[0].name, "cv.pdf");
+  assert.match(app.document.querySelector('[role="status"]').textContent, /nu a putut fi confirmată/);
+  assert.equal(app.form.getAttribute("aria-busy"), null);
+  app.dom.window.close();
+});
+
 test("navigarea la secțiuni și linkurile vechi păstrează URL-ul fără fragment", () => {
   const dom = new JSDOM(read("index.html"), { url: "https://example.test/index.html#home", runScripts: "outside-only" });
   let destination;
